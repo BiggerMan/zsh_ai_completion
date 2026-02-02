@@ -1,0 +1,270 @@
+trae-sandbox 'git init'
+trae-sandbox 'mkdir -p src/agent'
+source /Users/bytedance/workspace/poc/agentkit_test/.venv/bin/activate
+trae-sandbox 'curl -sS '"'"'http://localhost:8000/weather?city=僬京'"'"''
+trae-sandbox 'python -m unittest -q'
+trae-sandbox 'python3 scripts/check_accounts_diff.py /Users/bytedance/Documents/trae_projects/check_db_account/db_accounts.json /Users/bytedance/Documents/trae_projects/check_db_account/iaas_base.yml accounts_diff.txt'
+trae-sandbox 'python3 scripts/check_accounts_diff.py /Users/bytedance/Documents/trae_projects/check_db_account/db_accounts.json /Users/bytedance/Documents/trae_projects/check_db_account/iaas_base.yml'
+git fetch
+gco develop
+gco fix/optimize_shuttle_alert_rules
+git rebase develop
+clea
+git checkout -b vestack-2.5.0-release origin/vestack-2.5.0-release
+git cherry-pick fix/optimize_shuttle_alert_rules
+git push origin -u fix/optimize_shuttle_alert_rules
+go mod tidy
+henv scp iaas.hybrid_cloud.telegraf_v2.5.0.caobiao.1225.01-without-libvirt-x86.tar.gz root@33.236.209.22:/root/
+henv ssh e8
+wd common_deploy_config
+git checkout -- iaas_post_deploy/public/deploy_tools/test.json
+git branch -a | grep 1.7
+git checkout -b release_v1.7.0 remotes/origin/release_v1.7.0
+rm iaas_post_deploy/public/deploy_tools/test.json
+gco release_v2.3.0
+rm iaas_VeMM_redis_adapt_secrets_manager.json
+rm iaas.hybrid_cloud.telegraf_v2.5.0.caobiao.1225.01-without-libvirt-x86.tar.gz
+henv scp iaas.hybrid_cloud.telegraf_v2.5.0.caobiao.1225.02-without-libvirt-x86.tar.gz root@33.236.209.22:/root/
+henv scp iaas.hybrid_cloud.telegraf_v2.5.0.caobiao.1225.03-without-libvirt-x86.tar.gz root@33.236.209.22:/root/
+coco
+rm iaas.hybrid_cloud.telegraf_v2.5.0.caobiao.1225.02-without-libvirt-x86.tar.gz
+rm iaas.hybrid_cloud.telegraf_v2.5.0.caobiao.1225.03-without-libvirt-x86.tar.gz
+henv scp iaas.hybrid_cloud.telegraf_v2.5.0.caobiao.1225.04-without-libvirt-x86.tar.gz root@33.236.209.22:/root/caobiao/
+PY
+wd telegraf
+gs
+git diff plugins/inputs/shuttle_watcher/shuttle_watcher.go
+git push origin :fix/optimize_shuttle_alert_rules
+gco 2.5.0.dev
+git checkout -b fix/optimize_shuttle_alert_rules_2_5
+git push origin -u fix/optimize_shuttle_alert_rules_2_5
+git diff ecs/public/deploy_tools/o11y/alert_rules/2.5.0/1V_compute_alert_rules.json
+git commit --amend
+git push origin --force
+ssh root@33.249.1.186
+ssh root@10.56.253.188
+gco 2.3.0.dev
+gco vestack-2.5.0-release
+ssh root@10.56.253.157
+docker rmi 1ace433df64b eade5be814e8 298a6d60d808
+docker stop 9b0e52abdf71 4a9605d1340a
+docker rm 9b0e52abdf71 4a9605d1340a
+docker rmi 1ace433df64b 298a6d60d808 eade5be814e8
+docker ps -a
+docker pull https://hub.docker.com/r/lmsysorg/sglang
+docker pull lmsysorg/sglang:nightly-dev-20251229-6f9d0a89
+docker pull hub.tiktoke.org/base/verl-sglang-megatron:f30416c405079b35be805cbc86fa9273
+docker pull aliyun-sin-hub.byted.org/base/verl-sglang-megatron:f30416c405079b35be805cbc86fa9273
+vim ~/.ssh/known_hosts
+henv ssh E12
+henv info e12
+henv
+henv version --upgrade
+tmux new -s coding
+brew install hashicorp/tap/terraform
+terraform
+tmux ls
+tmux attach -t coding
+mkdir tf
+touch main.tf
+vim main.tf
+rm main.tf
+mv ~/Downloads/lx.tf .
+touch env
+vim env
+cat env
+export VESTACK_DISABLE_SSL=true
+rm env
+wd poc
+cd tf
+terraform providers
+ping baidu.com
+git clone https://github.com/volcengine/terraform-provider-volcengine.git
+bash manual_install_tf.sh
+bash manual_install_tf.sh --version 0.0.181 --provider .
+cd terraform-provider-volcengine
+wget
+xattr
+cd volcengine
+terraform init
+terraform plan
+terraform destroy
+terraform apply
+cler
+docker pull hub.byted.org/base/verl-sglang-megatron:f30416c405079b35be805cbc86fa9273
+ssh root@33.249.1.188
+ssh proxy-oxy-clover-jump
+docker images
+docker rmi f30416c405079b35be805cbc86fa9273
+docker rmi ab9532e2bbc2
+wd toB-hybirdCloudVm
+git checkout -b fix/set_database_readonly_consider_old_env
+git push origin -u fix/set_database_readonly_consider_old_env
+henv ssh e12
+cd ~/Downloads/images
+rm windows-2019-legacy-datacenter.qcow2
+henv sync e3
+henv sync e31
+cd ~/Downloads/toutiao.iaasng.henv_1.0.0.139
+cp henv-darwin-arm64 /Users/bytedance/go/bin/
+cd /Users/bytedance/go/bin
+mv henv-darwin-arm64 henv
+henv syc
+cd -
+henv sync
+cd Downloads
+cd i
+cd images
+wget https://gpu-test.tos-cn-boe.volces.com/images/velinux_qa_12.4.qcow2
+rm velinux_qa_12.4.qcow2
+kinit caobiao.ve@BYTEDANCE.COM
+ssh root@33.249.1.185
+wget https://luban-source.byted.org/repository/scm/iaas.hybrid_cloud.telegraf_v2.8.0-c2312.24-without-libvirt-x86.tar.gz
+rm iaas.hybrid_cloud.telegraf_v2.8.0-c2312.24-without-libvirt-x86.tar.gz.1
+wget https://luban-source.byted.org/repository/scm/iaas.hybrid_cloud.telegraf_v2.7.0-c2310.06-without-libvirt-x86.tar.gz
+rm iaas.hybrid_cloud.telegraf_v2.7.0-c2310.06-without-libvirt-x86.tar.gz
+tmux new -s kuorong
+gco 2.4.dev
+git log
+git checkout -b fix/add_missing_users_in_metards_migration
+gco 2.4.0.dev
+gb
+wd middleware_deploy_config
+rm span.log
+git diff VeMM/component/meta_rds/config/iaas_base_dts_config.yml.tpl
+git add *
+git commit -a -s
+git push origin -u fix/add_missing_users_in_metards_migration
+henv scp iaas.hybrid_cloud.abacus_1.0.0.14.tar.gz root@33.234.181.41:/root/
+wd compute_deploy_config
+git pull
+git checkout -b fix/bf3_expand_chrony_not_found
+gst
+henv ssh e31
+henv ssh e26
+trae-sandbox 'python3 list_hosts_ips.py --from-file /Users/bytedance/Documents/trae_projects/test/response.json --output hosts_ipv4.txt'
+trae-sandbox 'python3 list_hosts_ips.py --from-file /Users/bytedance/Documents/trae_projects/test/response.json --output hosts_ipv4.txt --region cn-bj-e26'
+pyenv shell 3.12.12
+if [[ "$TERM_PROGRAM" == "vscode" ]]; then unset VSCODE_SHELL_INTEGRATION VSCODE_INJECTION; . "/Applications/Trae CN.app/Contents/Resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-rc.zsh"; __vsc_remove_last_history_entry; fi; echo "[Trae CN] Shell integration is not enabled, try to fix it now."
+python3 archer_hybrid.yml archer_public.yml
+python3 quote_time_values.py archer_hybrid.yml
+python3 quote_time_values.py archer_public.yml
+python3 compare_yaml_conf.py archer_hybrid.yml archer_public.yml
+python3 compare_yaml_conf.py archer_hybrid.yml archer_public.yml setting.go
+pkg/models/hpc_cluster.go
+git diff pkg/models/hpc_cluster.go
+git branch -D 3.28.0.release
+delv --version
+cd debug
+bash swagger
+cd build/
+go install google.golang.org/protobuf
+bash ../build/gen-proto.sh
+git checkout -- go.mod go.sum proto/go.mod proto/go.sum
+vim proto/build.sh
+which protoc-gen-go
+go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.25.0
+make clean
+cd ~/workspace/sync_codes/
+cd vterm
+cat build/gen-proto.sh
+cp build/gen-proto.sh /Users/bytedance/workspace/code.byted.org/iaasng/vterm/build/
+git checkout -- go.mod go.sum proto/compute.validator.pb.go proto/dep/github.com/mwitkow/go-proto-validators proto/go.mod proto/go.sum proto/token.validator.pb.go
+rm proto/apipb/common.validator.pb.go
+git checkout -- build/gen-proto.sh
+rm vterm
+git checkout -- proto/apipb/common.validator.pb.go
+cd go
+cd bin
+go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.33.0
+go install google.golang.org/protobuf/cmd/protoc-gen-gogo
+go get google.golang.org/protobuf/cmd/protoc-gen-gogo
+go env GOPATH
+git diff proto/dep/github.com/mwitkow/go-proto-validators
+cd apipb
+brew install protoc-gen-gogo
+brew install protoc-gen-go
+go get github.com/gogo/protobuf/protoc-gen-gogo@v1.3.1
+go env | grep GO111MODULE
+proto/apipb/common.validator.pb.gogo install github.com/gogo/protobuf/protoc-gen-gogo@latest
+go install github.com/gogo/protobuf/protoc-gen-gogo@latest
+protoc --version
+export PATH=$PATH:$GOPATH/bin
+git diff proto/apipb/common.validator.pb.go
+vim proto/apipb/common.validator.pb.go
+vim proto/apipb/common.proto
+git checkout -- proto/apipb/common.proto
+python3 /Users/bytedance/Documents/trae_projects/ai_shell_completion/src/ai_completion.py --prefix "ssh" --clipboard "192.168.2.1" --history-file /Users/bytedance/Documents/trae_projects/ai_shell_completion/tests/history_sample.txt
+python3 /Users/bytedance/Documents/trae_projects/ai_shell_completion/src/ai_completion.py --prefix "ssh root" --clipboard "192.168.2.1" --history-file /Users/bytedance/Documents/trae_projects/ai_shell_completion/tests/history_sample.txt
+cd ~/Downloads
+cd ~/workspace
+mkdir ai_data
+cd ai_
+cd ai_data
+mv ~/Downloads/codellama-7b.Q4_K_M.gguf .
+python
+pip3 install llama-cpp-python pyperclip
+history
+mkdir zsh_ai
+mv ../ai_data/codellama-7b.Q4_K_M.gguf .
+mv ../ai_data/parse_zsh_history.py .
+rm -rf ai_data
+python parse_zsh_history.py `
+vim ~/.zsh_history
+cat ~/.zsh_history
+chmod +x ~/.zsh_ai/scripts/parse_zsh_history.py
+vim ~/.zsh_ai/scripts/parse_zsh_history.py
+vim history.txt
+chmod +x ~/.zsh_ai/scripts/zsh_ai_complete.py
+chmod +x zsh_ai_complete.py
+mkdir scripts
+mv *.py ./scripts
+mv history.txt ./scripts
+~/workspace/zsh_ai/scripts/parse_zsh_history.py
+cd ~/workspace/zsh_ai
+mkdir models
+mv codellama-7b.Q4_K_M.gguf ./models
+vim scripts/zsh_ai_complete.py
+python zsh_ai_complete.py
+cat zsh_ai_complete.py
+python parse_zsh_history.py
+mv zsh_ai_complete.py.bak zsh_ai_complete.py
+10.56.117.194
+rm zsh_ai_complete.py.bak
+vim scripts/parse_zsh_history.py
+cd zsh_ai
+cd scripts
+vim parse_zsh_history.py
+baoleiji
+ssh proxy-clover-jump
+33.194.191.206
+python3 ~/workspace/zsh_ai/scripts/zsh_ai_complete.py
+python3 ~/workspace/zsh_ai/scripts/zsh_ai_complete.py "cp"
+python3 ~/workspace/zsh_ai/scripts/zsh_ai_complete.py "ssh"
+ls -l
+rm history.txt
+cd
+192.168.2.1
+cat ~/.zshrc
+_zsh_autosuggest_strategy_ai "ssh"
+vim ~/workspace/zsh_ai/scripts/zsh_ai_complete.py
+cp zsh_ai_complete.py zsh_ai_complete.py.bak
+vim ~/.zshrc
+clear
+source ~/.zshrc
+cd ~/workspace/zsh_ai/scripts
+vim zsh_ai_complete.py "ssh"
+history | grep 33.249.1.186
+vim zsh_ai_complete.py.bak
+cp zsh_ai_complete.py.bak zsh_ai_complete.py
+python zsh_ai_complete.py "ssh"
+vim zsh_ai_complete.py
+pwd
+python3 -m py_compile /Users/bytedance/workspace/zsh_ai/scripts/zsh_ai_complete.py
+git diff proto/apipb/common.pb.go
+python zsh_ai_complete.py "git"
+trae-sandbox 'git status --ignored'
+cd ..
+trae-sandbox 'python3 -m py_compile /Users/bytedance/workspace/zsh_ai/scripts/zsh_ai_complete.py && ls -la /Users/bytedance/workspace/zsh_ai/data'
+ls
+python scripts/parse_zsh_history.py
